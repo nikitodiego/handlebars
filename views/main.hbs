@@ -1,0 +1,14 @@
+
+    <div class="container" >
+         {{#each datos}}
+        <div class="card" style="width: 18rem; margin: 1rem; display: inline-block;">
+            <img src=../{{this.thumbnail}} class="card-img-top" alt="Imagen ilustrativa" style="width: 100%; height: auto">
+            <div class="card-body" >
+              <h5 class="card-title">{{this.title}}</h5>
+              <p class="card-text">Precio: {{this.price}}</p>
+              <a class="btn btn-primary">Go somewhere</a>
+            </div>           
+                <a href="/api/productos/{{this.id}}" class="btn btn-primary" style="margin: 2rem;">Ver producto</a>
+        </div>
+        {{/each}}
+    </div>
